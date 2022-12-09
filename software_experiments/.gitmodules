@@ -1,0 +1,6 @@
+[submodule "multeval"]
+	path = multeval
+	url = https://github.com/jhclark/multeval.git
+[submodule "moses-scripts"]
+	path = moses-scripts
+	url = https://github.com/marian-nmt/moses-scripts.git

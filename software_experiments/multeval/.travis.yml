@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk7
+  - openjdk7
+  - openjdk6
+before_script:
+  - free -m
+  - ./get_deps.sh
+  - sudo apt-get install cpanminus
+  - sudo cpanm XML::Twig
+script: ant
+after_script:
+  - ./reg-test/reg-test.sh
